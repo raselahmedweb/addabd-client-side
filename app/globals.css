@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@layer utilities {
+  .btn-primary {
+    @apply bg-white border border-green-700 text-gray-900 sm:text-sm focus:ring-red-600 focus:border-red-600 block w-full pl-9 p-2 lg:p-2.5 dark:bg-black dark:border-green-700 dark:placeholder-red-600 dark:text-white dark:focus:ring-red-600 dark:focus:border-red-600;
+}
+}
+
+/* for comment scroll */
+.scrollable-kit::-webkit-scrollbar {
+  width: 0px; 
+  height: 0px; 
+}
+
+
+
+
