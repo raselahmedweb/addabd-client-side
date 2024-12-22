@@ -115,12 +115,12 @@ const OTP = () => {
               <p>
                 {isExpired ? (
                   <>
-                    Didn't receive the code?{" "}
+                    Didn&apos;t receive the code?{" "}
                     <button className="text-blue-600">Resend now</button>
                   </>
                 ) : (
                   <>
-                    Didn't receive the code?{" "}
+                    Didn&apos;t receive the code?{" "}
                     <span className="text-red-600">{`Resend in (${Math.floor(
                       timeLeft / 60
                     )}:${(timeLeft % 60).toString().padStart(2, "0")})`}</span>
